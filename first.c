@@ -3,14 +3,12 @@
 int main() {
     printf("Hello, World!");
     return 0;
-}
+} 
 
-int add(int a, int b) {
-    return a + b;
-}
-int main() {
-    printf("Hello, World!");
-    int result = add(2, 3);
-    printf("The sum is: %d\n", result);
-    return 0;
-}
+/*
+    Fformat Specifier       Data Type
+    %d or %i                 int e.g 5
+    %f or %F                 float e.g 1.88
+    %c                       double e.g 1.68
+    %s                       string e.g "This is it"
+*/
