@@ -1,11 +1,12 @@
 #include <stdio.h>
-#include <stdbool.h>  //This is used when a boolean data type is needed
+#include <stdbool.h> //This is used when a boolean data type is needed
 
-int main () {
+int main()
+{
     printf("Hello I'm on C-Programming \n");
     printf("C17 version \n");
 
-    //Variables = A reusable container for a value
+    // Variables = A reusable container for a value
     int age = 2;
     int year = 1997;
     int quantity = 1;
@@ -18,7 +19,7 @@ int main () {
 
     char grade = 'A';
 
-    //In C theirs nothing luke string data type, we use char array to store string values
+    // In C theirs nothing luke string data type, we use char array to store string values
     char name[] = "John Doe";
     char food[] = "Amala and Ewedu";
 
@@ -36,11 +37,23 @@ int main () {
     printf("Your favorite food is %s \n", food);
     printf("%d \n", isActive);
 
+    // Data Types = Different types of variables to store different types of data
+    int myNum = 5;           // Integer (whole number)
+    float myFloatNum = 5.99; // Floating point number
+    char myLetter = 'D';     // Character
 
-    //Data Types = Different types of variables to store different types of data
-    int myNum = 5;               // Integer (whole number)
-    float myFloatNum = 5.99;    // Floating point number
-    char myLetter = 'D';        // Character    
+    // Relational an logical Operator
+    int pZ = 5, yZ = 10;
+    printf("%d\n", pZ == yZ);
+    printf("%d\n", pZ != yZ);
+    printf("%d\n", pZ > yZ);
+    printf("%d\n", pZ < yZ);
+    printf("%d\n", pZ >= yZ);
+    printf("%d\n", pZ <= yZ);
+
+    int number = 5;
+    int Y = 15;
+    printf("%d\n", Y / number); // Outputs 3
 
     return 0;
 }
