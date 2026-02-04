@@ -98,5 +98,63 @@ int main()
     break;
   }
 
+  //----Loop-----
+  // For loop: is used when you want a repeat block of code for a specific number of time.
+  for (int i = 0; i <= 10; i++) // initialization, condition, iteration(increment/decrement)
+    printf("%d", i);
+  printf("\n");
+
+  // While Loop
+  int j = 1;
+  while (j <= 4)
+  {
+    printf("%d", j);
+    printf("\n");
+    j++;
+  }
+
+  // Do while
+  int k;
+  do
+  {
+    printf("Enter a positive number: ");
+    scanf("%d", &k);
+  } while (k <= 0);
+
+  // Break & Continue
+  for (int i = 0; i < 9; i++)
+  {
+    if (i == 5)
+      continue;
+    if (i == 9)
+      break;
+    printf("%d", i);
+    printf("\n");
+  }
+
+  // Arrays
+  int arr[5] = {1,2,3,4,5};
+  for(int i = 0; i < 5; i++){
+    printf("%d", arr[i]);
+  }
+
+  // Multi-dimensional array
+  int finalGrade [3][2] = {
+    {75, 50},
+    {68, 72},
+    {87, 45}
+  };
+
+  int l, m;
+  for (int l = 0; l < 3; l++){
+   printf("Student %d scores: ", l + 1);
+  }
+
+  for (int m = 0; m < 2; m++){
+   printf("%d", finalGrade[l][m]);
+  };
+  
+  
+
   return 0;
 }
