@@ -133,28 +133,43 @@ int main()
   }
 
   // Arrays
-  int arr[5] = {1,2,3,4,5};
-  for(int i = 0; i < 5; i++){
+  int arr[5] = {1, 2, 3, 4, 5};
+  for (int i = 0; i < 5; i++)
+  {
     printf("%d", arr[i]);
   }
 
   // Multi-dimensional array
-  int finalGrade [3][2] = {
-    {75, 50},
-    {68, 72},
-    {87, 45}
-  };
+  int finalGrade[3][2] = {
+      {75, 50},
+      {68, 72},
+      {87, 45}};
 
   int l, m;
-  for (int l = 0; l < 3; l++){
-   printf("Student %d scores: ", l + 1);
+  for (l = 0; l < 3; l++)
+  {
+    printf("Student %d scores: ", l + 1);
+    for (m = 0; m < 2; m++)
+    {
+      printf("%d ", finalGrade[l][m]);
+    };
+    printf("\n");
   }
 
-  for (int m = 0; m < 2; m++){
-   printf("%d", finalGrade[l][m]);
-  };
-  
-  
+  // Strings
+  printf("%s", "This is Nigeria \n");
+  printf("Her name is HER \n");
+
+  //String Traversal
+  char str[] =  "CProgramming";
+  for(int i = 0; str[i] != '\0'; i++)
+    printf("%c", str[i]);
+    printf("\n");
+
+  // Pointer
+  int z = 10;
+  //The & operator helps get the address of a variable
+  printf("%p", &z);
 
   return 0;
 }
