@@ -1,8 +1,21 @@
 #include <stdio.h>
 #include <stdbool.h> //This is used when a boolean data type is needed
 
+// Function
+void greet()
+{
+  printf("Yes ooo their mind go DEY!");
+}
+
+int square(int x);
+int add(int a, int b);
+
+void display(char str[]);
+
+
 int main()
 {
+  
   printf("Hello I'm on C-Programming \n");
   printf("C17 version \n");
 
@@ -160,16 +173,40 @@ int main()
   printf("%s", "This is Nigeria \n");
   printf("Her name is HER \n");
 
-  //String Traversal
-  char str[] =  "CProgramming";
-  for(int i = 0; str[i] != '\0'; i++)
+  // String Traversal
+  char str[] = "CProgramming";
+  for (int i = 0; str[i] != '\0'; i++)
     printf("%c", str[i]);
-    printf("\n");
+  printf("\n");
 
   // Pointer
   int z = 10;
-  //The & operator helps get the address of a variable
+  // The & operator helps get the address of a variable
   printf("%p", &z);
+  printf("\n");
+
+  greet();
+  printf("\n");
+
+  printf("Square: %d\n", square(5));
+  printf("Addition: %d\n", add(61237, 1827365));
+
+  char name[] = "John is a boy from jupiter";
+  display(name);
 
   return 0;
+}
+
+int add (int a, int b) {
+  return a + b;
+}
+
+void display(char str[]){
+  printf("%s\n", str);
+}
+
+// Function is a parameter
+int square(int x)
+{
+  return x * x;
 }
